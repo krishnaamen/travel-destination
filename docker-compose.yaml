@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+  app:
+    build: .
+    container_name: travel-log
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongodb
+    environment:
+      DATABASE_HOST: mongodb
+    deploy:  
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 512M
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+  mongodb:
+    image: "mongodb/mongodb-community-server"
+    container_name: mongodb
+    volumes:
+      - mongodb_data:/data/db
+  ngrok: 
+    image: ngrok/ngrok:latest
+    container_name: ngrok-container
+    command:
+          - "start"
+          - "--all"
+          - "--config"
+          - "/etc/ngrok.yml"
+    volumes:
+      - ./ngrok.yml:/etc/ngrok.yml
+    ports:
+      - 4040:4040
+volumes:
+  mongodb_data:

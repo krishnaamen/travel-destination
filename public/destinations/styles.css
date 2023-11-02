@@ -1,0 +1,145 @@
+/* Add your CSS rules here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.titleBar {
+  background-color: red;
+  color: white;
+  padding: 10px;
+  display: flex;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+.country {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.material-symbols-outlined.globe {
+  font-family: "Material Symbols Outlined", sans-serif;
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.main {
+  max-width: 60%;
+  margin: 0 auto;
+  padding-left: 20px;
+}
+
+.destination {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.destination h1 {
+  font-size: 36px;
+}
+
+.travelcard {
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.travelcard img {
+  width: 125px;
+  height: 168px;
+  border-radius: 5px;
+}
+
+.travelcard .div1 {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.travelcard .title {
+  color: #333333;
+  font-size: 25px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.travelcard .date {
+  color: #333333;
+  font-size: 10.24px;
+  font-family: Inter;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.travelcard img {
+  width: 129px;
+  height: 168px;
+}
+.hr {
+  width: 200px;
+  align-items: center;
+}
+.travelcard .country {
+  color: #333333;
+  font-size: 10.24px;
+  font-family: Inter;
+  font-weight: 400;
+  letter-spacing: 1.74px;
+  word-wrap: break-word;
+}
+
+.travelcard .map-link {
+  width: 106px;
+  height: 13px;
+  color: #918e9b;
+  font-size: 10.24px;
+  font-family: Inter;
+  font-weight: 400;
+  text-decoration: underline;
+  word-wrap: break-word;
+}
+
+.travelcard .description {
+  color: #333333;
+  font-size: 10.24px;
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 15.36px;
+  word-wrap: break-word;
+}
+
+.hr-main {
+  border-top: 1px solid #ccc;
+  margin: 20px;
+}
+.location {
+  display: flex;
+  justify-content: flex-start;
+  padding: 5px;
+}
+.location img {
+  height: 7px;
+  width: 7px;
+}
+
+#add-entry-div {
+  display: flex;
+  justify-content: center;
+}
+
+.div2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}

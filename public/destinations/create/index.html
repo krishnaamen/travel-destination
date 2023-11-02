@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Destination</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="titleBar">
+      <span style="padding-right: 12px"><img src="/images/Globe.png" /></span>
+      <span>My Travel Journal</span>
+    </header>
+
+    <div id="main">
+      <div id="title-box">
+        <div id="text-box">
+          <h1>New Destination</h1>
+          <hr />
+        </div>
+      </div>
+      <div id="form-box">
+        <form>
+          <div id="inner-form-box">
+            <label for="country">Country</label>
+            <input
+              type="text"
+              name="country"
+              placeholder="Placeholder"
+              required
+            />
+            <label for="title">Title</label>
+            <input
+              type="text"
+              name="title"
+              placeholder="Placeholder"
+              required
+            />
+            <label for="link">Link</label>
+            <input type="url" name="link" placeholder="Placeholder" required />
+            <label for="arrivalDate">Arrival date</label>
+            <input
+              type="date"
+              name="arrivalDate"
+              placeholder="Placeholder"
+              required
+            />
+            <label for="departureDate">Departure Date</label>
+            <input
+              type="date"
+              name="departureDate"
+              placeholder="Placeholder"
+              required
+            />
+            <label for="image">Image</label>
+            <input
+              type="file"
+              name="image"
+              placeholder="Placeholder"
+              required
+            />
+            <label for="description">Description</label>
+            <input
+              type="text"
+              name="description"
+              placeholder="Placeholder"
+              required
+            />
+          </div>
+
+          <div id="button-box">
+            <a href="/" id="left-button"
+              ><img src="/images/Cancel button.png"
+            /></a>
+            <div id="saveDestination">
+              <img src="/images/Primary Button.png" />
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

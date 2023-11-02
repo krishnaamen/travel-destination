@@ -1,0 +1,6 @@
+authtoken: READ_README
+version: 2
+tunnels:
+  app:
+    proto: http
+    addr: app:3000
